@@ -7,6 +7,10 @@ Your goals are to learn how to inspect, clean, and transform a real dataset usin
 
 This assignment is designed to take about 2–3 hours.  
 
+### What does successful work look like? 
+
+Your work should demonstrate that you can independently load, inspect, clean, and explore a real dataset using Pandas. Successful completion means your code runs without errors, your analysis correctly answers the questions posed, and your reflection shows thoughtful engagement with the data cleaning process. See the **Evaluation Criteria** section below for detailed expectations.
+
 ---
 
 ## Learning Objectives
@@ -124,8 +128,47 @@ When you have completed your work, commit and push your code file, `Exploring Ca
 ## AI Policy
 You may use AI to *ask questions* if you are stuck or need clarification. However, do not use AI code-completion or copy/paste code from AI. The purpose of this assignment is for you to gain fluency with Pandas by writing code yourself.
 
+
+## Evaluation Criteria
+
+This rubric describes different levels of understanding and skill demonstration. Use it for self-assessment and to understand feedback on your work. Your work will be ev aluated more holistically than this rubric implies, but will give you a sense of what I'm looking for at each facet.
+
+### Code Functionality
+
+**Exemplary**: All code executes flawlessly from top to bottom. All required tasks are completed correctly, including data loading, cleaning, transformation, filtering, and calculations. The workflow demonstrates clear understanding of the assignment requirements.
+
+**Proficient**: Code executes with only minor issues that don't prevent completion of major tasks. All required tasks are attempted and most are completed correctly. Any errors are minor and don't indicate fundamental misunderstandings.
+
+**Developing**: Code has some execution errors or several tasks are incomplete. Core functionality is present but needs refinement. Some required transformations or calculations are missing or incorrect.
+
+**Beginning**: Code does not run or has major execution errors. Multiple required tasks are missing or fundamentally incorrect. Demonstrates need for significant additional practice with core concepts.
+
 ---
 
-## Evaluation
-Assignments will be evaluated on completeness and clarity. Work must run without errors, be written to a professional standard (clean, readable code), and include all required answers and reflection.  
+### Data Analysis & Interpretation
 
+**Exemplary**: All analytical questions are answered correctly with clear, data-supported explanations. Demonstrates strong ability to extract insights from data. Calculations are accurate and interpretations show deep engagement with the dataset. Data visualizations support the conclusions directly and adhere to design best practices.
+
+**Proficient**: Most questions are answered correctly. Minor errors in calculation or interpretation may be present but overall understanding is evident. Answers are supported by the data. Data visualizations are less clearly tied to analysis. 
+
+**Developing**: Some questions are answered incorrectly or incompletely. Demonstrates partial understanding but needs improvement in accuracy or depth of analysis. Some unsupported claims or missing evidence. Data visualizations are rudimentary or absent.
+
+**Beginning**: Many questions are unanswered or incorrect. Limited evidence of analytical thinking or data interpretation skills. Needs substantial work on connecting code output to meaningful insights.
+
+---
+
+### Finished Product
+
+**Exemplary**: Code is clean, well-organized, and uses best practices. Variable names are meaningful and consistent. Pandas methods are used efficiently and appropriately. Markdown cells are used for commentary and to divide up the workflow. The notebook is easy to read and follow, with proper markdown formatting and logical flow.
+
+**Proficient**: Code is generally clean and readable. Minor inconsistencies in style or efficiency may exist but don't impede understanding. Notebook organization is logical with adequate formatting.
+
+**Developing**: Code works but has readability issues such as unclear variable names, inconsistent formatting, or inefficient approaches. Notebook organization could be improved. Demonstrates need for more attention to code quality.
+
+**Beginning**: Code is difficult to read or understand. Poor variable naming, lack of organization, or highly inefficient methods. Minimal attention to presentation or professionalism.
+
+---
+
+### Reflection 
+
+In the reflection section, I am looking for thoughtful engagement with the learning process. I seek to learn your challenges, any insights developed during the assignment, and remaining questions. 
