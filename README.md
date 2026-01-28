@@ -16,20 +16,19 @@ Your work should demonstrate that you can independently load, inspect, clean, an
 ## Learning Objectives
 By the end of this assignment you should be able to:
 
-- Load CSV data into a Pandas DataFrame.
-- Inspect the structure of the dataset and identify missing values.
-- Clean and transform variables into more useful forms.
-- Create new derived variables.
-- Perform basic filtering, grouping, and aggregation.
-- Generate simple visualizations with Matplotlib or Pandas.
-- Write a brief reflection on the data cleaning process.
+- Load CSV data into a Pandas DataFrame
+- Inspect the structure of a dataset and identify missing values
+- Clean and transform variables into more useful forms
+- Create new derived variables
+- Perform basic filtering, grouping, and aggregation
+- Write a brief reflection on the data preparation process and think critically about how preparation decisions affect analysis
 
 ---
 
 ## Data
 The dataset is provided in a compressed zip file on Canvas. Download that data and extract the CSV file to your repository directory. The dataset is named `car_listings.csv`. Remember: we do not want to track large data files in Git. I've set up the `.gitignore` file to exclude CSV files, so you should be safe, but make sure you don't accidentally commit the data file.
 
-The file contains approximately 266K rows of car listings from the following cities:
+The file contains car listings from the following cities:
 
 - Chicago  
 - Minneapolis  
@@ -77,61 +76,72 @@ These data were scraped from Craigslist starting in mid-2023. The dataset contai
 ---
 
 ## Instructions
-Complete all work in the provided Jupyter Notebook (`Explore Car Listings.ipynb`).  Some of the 
-steps indicated have been taken care of for you to help you get started.
-
-### Part 0: Setup
-- Import Pandas and Numpy.  
-- Load the dataset into a DataFrame.  
-- Inspect the first 10 rows.  
+Complete all work in the provided Jupyter Notebook (`Exploring Car Listings.ipynb`). Some of the steps indicated have been taken care of for you to help you get started.
 
 ### Part 1: Inspect the Data
-- Print dataset shape, data types, summary statistics, and missing values.  
-- Question 1: Which columns are most incomplete?  
+Before we can analyze or prepare data, we must understand what it is: its source, structure, scope, and limitations. Use the provided cells to examine dataset shape, data types, summary statistics, and patterns of missing data.
 
-### Part 2: Cleaning
-- Drop duplicate rows (`post_id` is unique).  
-- Standardize string columns to lowercase.  
-- Create new variables:
-  - `car_age = 2025 - year`  
-  - `high_mileage = odometer > 150000`  
-  - `price_per_mile = price / odometer`  
-- Question 2: Which make has the highest median `price_per_mile`?  
 
-### Part 3: Exploration
+### Part 2: Preparing the Data for Analysis
+Before analyzing this data, we need to prepare it by making thoughtful decisions about duplicates, data types, and derived variables.
 
-For this next section, cut down the data to just Ford F-150s. Then:
-- Fill missing values:
-  - Numeric (`odometer`, `year`, `price`) with median.  
-  - Categorical (`fuel`, `drive`, `transmission`, `paint`) with the most common value (the "mode").  
-- Filter listings priced between $5,000 and $50,000.  
-- Compute average price by location.  
-- Count monthly listings using `time_posted`.  
+### Part 3: Handling Missing Data
+When we encounter missing values, we have several choices: remove rows, fill (impute) values, or keep them and handle during analysis. Each choice has implications.
 
-### Part 4: Visualization
 
-I've built some visualizations for you and asked you questions about them. 
-
-### Part 5: Reflection
-- Write a short reflection in Markdown:
-  - What was most challenging about cleaning this dataset?  
-  - Did anything surprise you?  
+### Part 4: Reflection
+Write a short reflection wrapping up the assignment. 
 
 ---
 
 ## Deliverables
 
-When you have completed your work, commit and push your code file, `Exploring Car Listings.ipynb`.
+When you have completed your work, **follow these steps carefully before submitting**. These will be largely the same on every assignment. 
+
+### 1. Clear All Outputs
+Before your final submission, you need to clear all cell outputs to ensure a clean starting state:
+- In the notebook menu, select **Kernel → Restart & Clear Output** (or **Kernel → Restart Kernel and Clear All Outputs**)
+- This removes all previously generated output and resets the kernel
+
+### 2. Run Everything from Top to Bottom
+After clearing outputs, verify that your notebook runs correctly from start to finish:
+- Select **Run → Run All Cells** (or **Cell → Run All**)
+- Watch the cells execute in order
+- Ensure there are no errors
+- Check that all outputs appear as expected. In particular, **read** your Markdown cells and ensure they look exactly the way you want, just as you would with an essay assignment. 
+
+**Why is this important?** This process ensures that:
+- Your code doesn't depend on cells being run in a specific order that differs from top-to-bottom
+- You haven't accidentally deleted a cell that defines a variable used later
+- Someone else (including me, when grading) can view your notebook and see the results. If needed, I can also run the notebook and should see the same results. 
+
+### 3. Comment Out Large Outputs (Optional but Recommended)
+If any cells print very large DataFrames or long outputs, consider commenting them out or removing the print statements. This keeps your notebook file size manageable and makes it easier to review.
+
+### 4. Commit and Push to GitHub
+Once you've verified everything runs correctly:
+```bash
+git add "Exploring Car Listings.ipynb"
+git commit -m "Ready for review"
+git push
+```
+You can also commit by going to the Source Control menu (**View → Source Control** or click on the icon on the left) and using the GUI to do your add-commit-push cycle. Instructions for this are in Module 0 on Canvas. 
+
+**Final checklist before submitting:**
+- [ ] Kernel restarted and all outputs cleared
+- [ ] All cells run successfully from top to bottom
+- [ ] All questions answered in Markdown cells
+- [ ] Large debug outputs commented out or removed
+- [ ] Changes committed and pushed to GitHub
 
 ---
 
 ## AI Policy
 You may use AI to *ask questions* if you are stuck or need clarification. However, do not use AI code-completion or copy/paste code from AI. The purpose of this assignment is for you to gain fluency with Pandas by writing code yourself.
 
-
 ## Evaluation Criteria
 
-This rubric describes different levels of understanding and skill demonstration. Use it for self-assessment and to understand feedback on your work. Your work will be ev aluated more holistically than this rubric implies, but will give you a sense of what I'm looking for at each facet.
+This rubric describes different levels of understanding and skill demonstration. Use it for self-assessment and to understand feedback on your work. Your work will be evaluated more holistically than this rubric implies, but will give you a sense of what I'm looking for at each facet.
 
 ### Code Functionality
 
